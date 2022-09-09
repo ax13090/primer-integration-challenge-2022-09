@@ -50,7 +50,7 @@ app.post('/client-session', async (req, res) => {
       orderId: 'order-' + Math.random(),
 
       // 3-character Currency Code used for all the amount of this session
-      currencyCode: 'EUR',
+      currencyCode: 'USD',
 
       order: {
         // Line items for this session
