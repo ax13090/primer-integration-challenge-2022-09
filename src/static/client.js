@@ -43,6 +43,22 @@ async function onLoaded() {
       },
     },
 
+    onCheckoutFail(error, { payment }, handler) {
+      // Notifies you that the checkout flow has failed and a payment could not be created
+      // This callback can also be used to display an error state within your own UI.
+  
+      console.log("onCheckoutFail called")
+      // ⚠️ `handler` is undefined if the SDK does not expect anything from you
+      if (!handler) {
+        return;
+      }
+  
+      // ⚠️ If `handler` exists, you MUST call one of the functions of the handler
+
+      // Show a custom error message
+      return handler.showErrorMessage('Oh noes, gotsa nay rawr: ' + error);
+    },
+
     submitButton: {
       amountVisible: true,
     },
