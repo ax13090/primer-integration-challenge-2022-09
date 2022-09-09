@@ -30,6 +30,9 @@ async function onLoaded() {
           fontFamily: 'Fantasy',
         },        
       },
+      loadingScreen: {
+        color: "#ca49f5"
+      }
     },
     /**
      * Learn more about the other options at:
