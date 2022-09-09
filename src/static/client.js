@@ -21,6 +21,8 @@ async function onLoaded() {
       console.log('Checkout Complete!', payment)
     },
 
+
+    locale: "el-GR",
     /**
      * Learn more about the other options at:
      * https://primer.io/docs
