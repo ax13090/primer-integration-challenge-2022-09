@@ -23,6 +23,14 @@ async function onLoaded() {
 
 
     locale: "el-GR",
+
+    style: {
+      input: {
+        base: {                
+          fontFamily: 'Fantasy',
+        },        
+      },
+    },
     /**
      * Learn more about the other options at:
      * https://primer.io/docs
