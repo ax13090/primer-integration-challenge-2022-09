@@ -32,7 +32,15 @@ async function onLoaded() {
       },
       loadingScreen: {
         color: "#ca49f5"
-      }
+      },
+      showMorePaymentMethodsButton: { 
+        base: {
+          color: "green",
+        },
+        disabled: {
+          color: "orange",
+        },
+      },
     },
     /**
      * Learn more about the other options at:
