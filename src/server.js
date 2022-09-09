@@ -48,6 +48,7 @@ app.post('/client-session', async (req, res) => {
       // Create an orderId for this client session
       // Make sure to keep track of it: you will later receive updates through Webhooks.
       orderId: 'order-' + Math.random(),
+      customerId: "axel@primer.io",
 
       // 3-character Currency Code used for all the amount of this session
       currencyCode: 'USD',
@@ -64,6 +65,9 @@ app.post('/client-session', async (req, res) => {
             quantity: 1,
           },
         ],
+      },
+      paymentMethod: {
+        vaultOnSuccess: true
       }
 
       // Check all the other options at https://apiref.primer.io/v2/reference/create_client_side_token_client_session_post
