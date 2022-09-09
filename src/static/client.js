@@ -42,6 +42,10 @@ async function onLoaded() {
         },
       },
     },
+
+    submitButton: {
+      amountVisible: true,
+    },
     /**
      * Learn more about the other options at:
      * https://primer.io/docs
